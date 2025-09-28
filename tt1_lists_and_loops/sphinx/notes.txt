@@ -1,0 +1,129 @@
+basic lists
+
+In [1]: l = [1, "abc", 5.7, [1, 3, 5]]
+
+In [2]: l[0]
+Out[2]: 1
+
+In [3]: l[1]
+Out[3]: 'abc'
+
+In [4]: l[3]
+Out[4]: [1, 3, 5]
+
+In [5]: l[3][1]
+Out[5]: 3
+
+In [7]: l[1:3]
+Out[7]: ['abc', 5.7]
+
+In [8]: l[1:]
+Out[8]: ['abc', 5.7, [1, 3, 5]]
+
+In [10]: l[:3]
+Out[10]: [1, 'abc', 5.7]
+
+In [11]: l[-1]
+Out[11]: [1, 3, 5]
+
+In [16]: l[:-2]
+Out[16]: [1, 'abc']
+
+useful list functions:
+
+In [17]: len(l)
+Out[17]: 4
+
+operations on lists
+
+In [20]: l.append(27)
+
+In [21]: l
+Out[21]: [1, 'abc', 5.7, [1, 3, 5], 27]
+
+In [21]: l
+Out[21]: [1, 'abc', 5.7, [1, 3, 5], 27]
+
+In [22]: l1 = [1, 2, 3]
+
+In [23]: l2 = ["A", "B", "C"]
+
+In [24]: l1 + l2
+Out[24]: [1, 2, 3, 'A', 'B', 'C']
+
+In [25]: l1
+Out[25]: [1, 2, 3]
+
+In [26]: l2
+Out[26]: ['A', 'B', 'C']
+
+In [27]: l3 = l1 + l2
+
+In [28]: l3
+Out[28]: [1, 2, 3, 'A', 'B', 'C']
+
+In [34]: m = [3, 4, 8]
+
+In [36]: m[0]
+Out[36]: 3
+
+In [38]: l[3]
+Out[38]: [1, 3, 5]
+
+In [37]: l[m[0]]
+Out[37]: [1, 3, 5]
+
+loops:
+
+In [29]: for x in l:
+   ....:     print(x)
+   ....:     
+1
+abc
+5.7
+[1, 3, 5]
+27
+
+In [19]: list(range(0,10))
+Out[19]: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+In [30]: for x in range(7, 15):
+   ....:     print(x)
+   ....:     
+7
+8
+9
+10
+11
+12
+13
+14
+ 
+l0 = [-1, 5, 0, 27, -3, 5, 6, 7]
+
+loop: count the number of positive values in a list
+
+count = 0
+for x in l0:
+  if x > 0:
+    count = count + 1
+ 
+loop: create a new list that contains only the positive numbers
+
+ps = []
+for x in l0:
+  if x > 0:
+    ps.append(x)
+
+
+loop: create a new list where nl[i] == True if l[i] > 0
+
+rv = [False]*len(l0)
+for i in range(len(l0)):
+    rv[i] = (l0[i] > 0)
+
+rv = [False]*(max(ps) + 1)
+for x in ps:
+    rv[x] = True
+
+

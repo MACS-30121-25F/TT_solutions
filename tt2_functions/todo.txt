@@ -1,0 +1,4 @@
+Comments from Joan:
+
+- The plot_whatever abstraction question was unclear to many students; they all tried to pass the sinc or squared functions as arguments. I know the writeup says that they will learn to pass functions later in the quarter, but maybe we should explicitly say to not pass functions and suggest abstracting the plotting part only.
+- Many students were confused about the concept of __main__ and the go() function. I remember I was confused about how that fit into ipython / .py files for a long time last quarter as well. It might help to quickly mention it in class.
