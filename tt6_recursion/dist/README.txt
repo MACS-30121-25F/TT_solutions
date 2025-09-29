@@ -1,4 +1,4 @@
-# CAPP 121: Recursion
+# Recursion
 
 recursion.py: do your work in this file
 
